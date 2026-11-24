@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Task Management System</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <main>
+    <h1>Task Management System</h1>
+    <form id="taskForm" class="row">
+      <input id="taskInput" aria-label="New task" placeholder="Enter a task" required>
+      <button type="submit">Add Task</button>
+    </form>
+    <div id="filters" class="row" aria-label="Task filters">
+      <button type="button" data-filter="all" aria-pressed="true">All</button>
+      <button type="button" data-filter="active" aria-pressed="false">Active</button>
+      <button type="button" data-filter="completed" aria-pressed="false">Completed</button>
+    </div>
+    <ul id="taskList"></ul>
+    <div class="summary" aria-live="polite">
+      <p id="totalTasks">Total: 0</p>
+      <p id="completedTasks">Completed: 0</p>
+    </div>
+  </main>
+</body>
+</html>

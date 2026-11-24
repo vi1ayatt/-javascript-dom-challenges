@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Character Counter</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <main>
+    <h1>Character Counter</h1>
+    <label for="message">Message</label>
+    <textarea id="message" maxlength="100" rows="5" placeholder="Write your message..."></textarea>
+    <div class="summary">
+      <p id="remaining">Remaining: 100</p>
+      <p id="counter">0 / 100</p>
+    </div>
+    <progress id="progress" max="100" value="0" aria-label="Character limit used"></progress>
+    <button id="clear">Clear</button>
+  </main>
+</body>
+</html>
